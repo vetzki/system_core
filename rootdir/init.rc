@@ -321,6 +321,9 @@ on post-fs-data
     # won't work.
     # Set indication (checked by vold) that we have finished this action
     #setprop vold.post_fs_data_done 1
+    
+# Include extra init file
+    import /init.aosp.rc
 
 on boot
     # basic network init
